@@ -1,0 +1,18 @@
+{
+  "name": "goexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "compile": "tinygo build -o plugin.wasm -target=wasi main.go",
+    "run": "npm run compile && node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@extism/extism": "^2.0.0-rc3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.40"
+  }
+}
